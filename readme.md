@@ -6,11 +6,15 @@
 Now with a controller
 
 application can be run locally with the following command :
+(you need to have docker for desktop installed)
 
-cd dev-station
-docker-compose up
-cd ..
-mvn spring-boot:run
+    cd dev-station
+    docker-compose up
+
+(should download and start postgres)
+
+    cd ..
+    mvn spring-boot:run
 
 (please do make sure you can run maven on command line)
 
@@ -20,4 +24,5 @@ mvn spring-boot:run
 
 ## Upgrade dependencies version : 
 check latest pom parent version
-mvn versions::use-latest-versions
+
+    mvn versions::use-latest-versions
